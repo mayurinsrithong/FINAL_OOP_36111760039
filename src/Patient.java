@@ -1,15 +1,17 @@
 public class Patient {
-    //attrbutes
-    private int p_id;
+
+    //attributes
+    private int p_ID;
     private String p_name;
     private String p_gender;
     private int p_age;
     private String p_address;
     private String p_blood_result;
+
     //constructor
 
-    public Patient(int p_id, String p_name, String p_gender, int p_age, String p_address, String p_blood_result) {
-        this.p_id = p_id;
+    public Patient(int p_ID, String p_name, String p_gender, int p_age, String p_address, String p_blood_result) {
+        this.p_ID = p_ID;
         this.p_name = p_name;
         this.p_gender = p_gender;
         this.p_age = p_age;
@@ -17,14 +19,15 @@ public class Patient {
         this.p_blood_result = p_blood_result;
     }
 
-    //getter and setter
+    // getter and setter
 
-    public int getP_id() {
-        return p_id;
+
+    public int getP_ID() {
+        return p_ID;
     }
 
-    public void setP_id(int p_id) {
-        this.p_id = p_id;
+    public void setP_ID(int p_ID) {
+        this.p_ID = p_ID;
     }
 
     public String getP_name() {
@@ -67,12 +70,11 @@ public class Patient {
         this.p_blood_result = p_blood_result;
     }
 
-    //tostring
-
+    //toString
     @Override
     public String toString() {
         return "Patient{" +
-                "p_id=" + p_id +
+                "p_ID=" + p_ID +
                 ", p_name='" + p_name + '\'' +
                 ", p_gender='" + p_gender + '\'' +
                 ", p_age=" + p_age +
@@ -80,4 +82,4 @@ public class Patient {
                 ", p_blood_result='" + p_blood_result + '\'' +
                 '}';
     }
-}
+}//class
